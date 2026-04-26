@@ -59,32 +59,60 @@
 // Expected: { apple: 3, banana: 2, cherry: 1 }
 // Hint: Create an empty object, loop through array, add/increment properties
 
+// Q9.I (Hard): Group words by their first letter
+// Given: const words = ['apple', 'banana', 'apricot', 'cherry', 'blueberry', 'avocado'];
+// Return an object where the keys are the first letters of the words, and the values are arrays of words that start with that letter.
+// Expected: { a: ['apple', 'apricot', 'avocado'], b: ['banana', 'blueberry'], c: ['cherry'] }
+// Hint: Use the first letter of each word as the key in the object.
+
+// Q9.II (Hard): Find the most frequent word
+// Given: const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
+// Return the word that appears the most times in the array.
+// Expected: 'apple'
+// Hint: Use an object to count occurrences, then find the key with the highest value.
+
+// Q9.III (Hard): Count the number of unique words
+// Given: const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
+// Return the number of unique words in the array.
+// Expected: 3
+// Hint: Use an object to track words, then count the keys in the object.
+
+// Q9.IV (Hard): Group words by length
+// Given: const words = ['apple', 'banana', 'apricot', 'cherry', 'blueberry', 'avocado'];
+// Return an object where the keys are word lengths, and the values are arrays of words with that length.
+// Expected: { 5: ['apple'], 6: ['banana', 'cherry'], 7: ['apricot', 'avocado'], 9: ['blueberry'] }
+// Hint: Use the length of each word as the key in the object.
 
 // ===== LEVEL 4: CHALLENGING PATTERNS =====
 
-// Q10 (Expert): Find the second largest number
-// Given: const nums = [5, 12, 3, 12, 9, 1];
-// Return the second highest value (handle duplicates - return unique second highest)
-// Expected: 9
-// Hint: First find the max, then find the max of remaining numbers
-// OR: Mark largest during first loop, then find largest of unmarked numbers
+// Q10 (Hard): Find unique pairs that sum to a target
+// Given: const nums = [2, 5, 3, 8, 1, 4, 5]; target = 9
+// Return an array of unique pairs [a, b] that add up to target
+// Expected: [[5, 4], [8, 1]]
+// Hint: Use a Set to track numbers you've already seen to avoid duplicates
+
+// Q11 (Hard): Count the number of pairs that sum to a target
+// Given: const nums = [2, 5, 3, 8, 1, 4]; target = 9
+// Return the count of pairs that add up to the target
+// Expected: 2
+// Hint: Use nested loops to count pairs, but don't store them
 
 
 // ===== LEVEL 5: ADVANCED CHALLENGES =====
 
-// Q11 (Advanced): Rotate an array
+// Q12 (Advanced): Rotate an array
 // Given: const nums = [1, 2, 3, 4, 5]; k = 2;
 // Rotate the array to the right by k steps.
 // Expected: [4, 5, 1, 2, 3]
 // Hint: Use nested loops or manually shift elements.
 
-// Q12 (Advanced): Find all unique triplets that sum to zero
+// Q13 (Advanced): Find all unique triplets that sum to zero
 // Given: const nums = [-1, 0, 1, 2, -1, -4];
 // Return an array of triplets [a, b, c] such that a + b + c = 0
 // Expected: [[-1, -1, 2], [-1, 0, 1]]
 // Hint: Use nested loops and avoid duplicate triplets.
 
-// Q13 (Advanced): Spiral matrix traversal
+// Q14 (Advanced): Spiral matrix traversal
 // Given: const matrix = [
 //   [1, 2, 3],
 //   [4, 5, 6],
@@ -94,13 +122,13 @@
 // Expected: [1, 2, 3, 6, 9, 8, 7, 4, 5]
 // Hint: Use loops to traverse the matrix layer by layer.
 
-// Q14 (Advanced): Longest consecutive sequence
+// Q15 (Advanced): Longest consecutive sequence
 // Given: const nums = [100, 4, 200, 1, 3, 2];
 // Return the length of the longest consecutive elements sequence.
 // Expected: 4 (sequence: [1, 2, 3, 4])
 // Hint: Sort the array and count consecutive numbers.
 
-// Q15 (Advanced): Implement a basic calculator
+// Q16 (Advanced): Implement a basic calculator
 // Given: const expression = "3+5 / 2";
 // Evaluate the mathematical expression (only +, -, *, /).
 // Expected: 5 (integer division)
