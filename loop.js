@@ -159,16 +159,16 @@
 // Expected: { apple: 3, banana: 2, cherry: 1 }
 // Hint: Create an empty object, loop through array, add/increment properties
 
-const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
-let wordCount = {};
-for(let i = 0; i < words.length; i++){
-    if(!wordCount[words[i]]){
-        wordCount[words[i]] = 1 
-    } else { 
-        wordCount[words[i]]++;
-    }
-}
-console.log(wordCount)
+// const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
+// let wordCount = {};
+// for(let i = 0; i < words.length; i++){
+//     if(!wordCount[words[i]]){
+//         wordCount[words[i]] = 1 
+//     } else { 
+//         wordCount[words[i]]++;
+//     }
+// }
+// console.log(wordCount)
 
 // Q9.I (Hard): Group words by their first letter
 // Given: const words = ['apple', 'banana', 'apricot', 'cherry', 'blueberry', 'avocado'];
@@ -176,19 +176,40 @@ console.log(wordCount)
 // Expected: { a: ['apple', 'apricot', 'avocado'], b: ['banana', 'blueberry'], c: ['cherry'] }
 // Hint: Use the first letter of each word as the key in the object.
 
-// Q11 (Hard): Find the most frequent word
+// const words = ['apple', 'banana', 'apricot', 'cherry', 'blueberry', 'avocado'];
+// let keys = {};
+
+// for(let i = 0; i < words.length; i++){
+//     const firstChar = words[i].charAt(0);
+//     if(keys[firstChar[i]] !== words[i].charAt(0)){
+//         keys[firstChar] = []; // intializes the array 
+//     }
+//     console.log(keys)
+// }
+
+// Q9.II (Hard): Find the most frequent word
 // Given: const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
 // Return the word that appears the most times in the array.
 // Expected: 'apple'
 // Hint: Use an object to count occurrences, then find the key with the highest value.
+const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
+let MostWord = {}
+for(let i = 0; i < words.length; i++){
+    if(!MostWord[words[i]] ){
+        MostWord[words[i]] = 1 
+    } else {
+        MostWord[words[i]]++
+    }
+} 
+console.log(MostWord)
 
-// Q12 (Hard): Count the number of unique words
+// Q9.III (Hard): Count the number of unique words
 // Given: const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
 // Return the number of unique words in the array.
 // Expected: 3
 // Hint: Use an object to track words, then count the keys in the object.
 
-// Q13 (Hard): Group words by length
+// Q9.IV (Hard): Group words by length
 // Given: const words = ['apple', 'banana', 'apricot', 'cherry', 'blueberry', 'avocado'];
 // Return an object where the keys are word lengths, and the values are arrays of words with that length.
 // Expected: { 5: ['apple'], 6: ['banana', 'cherry'], 7: ['apricot', 'avocado'], 9: ['blueberry'] }
