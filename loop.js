@@ -201,7 +201,7 @@ for(let i = 0; i < words.length; i++){
         MostWord[words[i]]++
     }
 } 
-console.log(MostWord)
+console.log(MostWord) 
 
 // Q9.III (Hard): Count the number of unique words
 // Given: const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
