@@ -192,26 +192,49 @@
 // Return the word that appears the most times in the array.
 // Expected: 'apple'
 // Hint: Use an object to count occurrences, then find the key with the highest value.
-const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
-let MostWord = {}
-for(let i = 0; i < words.length; i++){
-    if(!MostWord[words[i]] ){
-        MostWord[words[i]] = 1 
-    } else {
-        MostWord[words[i]]++
-    }
-} 
-console.log(MostWord) 
+// const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
+// let MostWord = {}
+// for(let i = 0; i < words.length; i++){
+//     if(!MostWord[words[i]] ){
+//         MostWord[words[i]] = 1 
+//     } else {
+//         MostWord[words[i]]++
+//     }
+// } 
+// console.log(MostWord) 
 
 // Q9.III (Hard): Count the number of unique words
 // Given: const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
 // Return the number of unique words in the array.
 // Expected: 3
 // Hint: Use an object to track words, then count the keys in the object.
+// const words = ['apple', 'banana', 'apple', 'cherry', 'banana', 'apple'];
+// let uniqueWords = {}
+
+// for(let i = 0; i < words.length; i++){
+//     if(!uniqueWords[words[i]]){
+//         uniqueWords[words[i]] = true 
+//     }
+// }
+// const uniqueCounter = Object.keys(uniqueWords).length
+// console.log(uniqueCounter)
 
 // Q9.IV (Hard): Group words by length
 // Given: const words = ['apple', 'banana', 'apricot', 'cherry', 'blueberry', 'avocado'];
 // Return an object where the keys are word lengths, and the values are arrays of words with that length.
 // Expected: { 5: ['apple'], 6: ['banana', 'cherry'], 7: ['apricot', 'avocado'], 9: ['blueberry'] }
 // Hint: Use the length of each word as the key in the object.
+// const words = ['apple', 'banana', 'apricot', 'cherry', 'blueberry', 'avocado'];
 
+// let Arr = {}
+
+// for(let i = 0; i < words.length; i++){
+//     const wordCount = words[i].length
+
+//     if(!Arr[wordCount]){
+//         Arr[wordCount] = []
+//     }
+
+//     Arr[wordCount].push(words[i])
+// }
+// console.log(Arr)
