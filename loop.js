@@ -238,3 +238,121 @@
 //     Arr[wordCount].push(words[i])
 // }
 // console.log(Arr)
+
+// ===== LEVEL 4: CHALLENGING PATTERNS =====
+
+// Q10 (Hard): Find unique pairs that sum to a target
+// Given: const nums = [2, 5, 3, 8, 1, 4, 5]; target = 9
+// Return an array of unique pairs [a, b] that add up to target
+// Expected: [[5, 4], [8, 1]]
+// Hint: Use a Set to track numbers you've already seen to avoid duplicates
+// const nums = [2, 5, 3, 8, 1, 4, 5]; 
+// const target = 9;
+
+// const uniqueNums = [...new Set(nums)]
+// const sortedNums = uniqueNums.toSorted()
+
+// let a = 0;
+// let b = sortedNums.length - 1;
+// let result = []
+
+// while ( a < b ){
+//     const sum = sortedNums[a] + sortedNums[b]
+
+//     if(sum === target){
+//         result.push([sortedNums[a], sortedNums[b]])
+//         a++;
+//         b--;
+//     } else if (sum < target){
+//         a++;
+//     } else {
+//         b--;
+//     }
+// }
+
+// console.log(result)
+
+// Q11 (Hard): Count the number of pairs that sum to a target
+// Given: const nums = [2, 5, 3, 8, 1, 4]; target = 9
+// Return the count of pairs that add up to the target
+// Expected: 2
+// Hint: Use nested loops to count pairs, but don't store them
+// const nums = [2, 5, 3, 8, 1, 4]; 
+// const target = 9;
+// let count = 0; 
+
+// const unqiueSortedNums =  [...new Set( nums.toSorted())]
+
+// let a = 0 
+// let b = unqiueSortedNums.length - 1 
+
+// while( a < b){
+//     const sum = unqiueSortedNums[a] + unqiueSortedNums[b];
+
+//     if(sum === target){
+//         count++; a++; b--;
+//     } else if ( sum < target){
+//         a++;
+//     } else {
+//         b--;
+//     }
+// }
+
+// console.log(count)
+
+const nums = [7, 2, 4, 6, 3, 5, 1];
+const target = 10;
+
+// ===== LEVEL 5: ADVANCED CHALLENGES =====
+
+// Q12 (Advanced): Rotate an array
+// Given: const nums = [1, 2, 3, 4, 5]; k = 2;
+// Rotate the array to the right by k steps.
+// Expected: [4, 5, 1, 2, 3]
+// Hint: Use nested loops or manually shift elements.
+
+// Q13 (Advanced): Find all unique triplets that sum to zero
+// Given: const nums = [-1, 0, 1, 2, -1, -4];
+// Return an array of triplets [a, b, c] such that a + b + c = 0
+// Expected: [[-1, -1, 2], [-1, 0, 1]]
+// Hint: Use nested loops and avoid duplicate triplets.
+
+// Q14 (Advanced): Spiral matrix traversal
+// Given: const matrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ];
+// Return an array of elements in spiral order.
+// Expected: [1, 2, 3, 6, 9, 8, 7, 4, 5]
+// Hint: Use loops to traverse the matrix layer by layer.
+
+// Q15 (Advanced): Longest consecutive sequence
+// Given: const nums = [100, 4, 200, 1, 3, 2];
+// Return the length of the longest consecutive elements sequence.
+// Expected: 4 (sequence: [1, 2, 3, 4])
+// Hint: Sort the array and count consecutive numbers.
+
+// Q16 (Advanced): Implement a basic calculator
+// Given: const expression = "3+5 / 2";
+// Evaluate the mathematical expression (only +, -, *, /).
+// Expected: 5 (integer division)
+// Hint: Use loops to parse the string and evaluate step by step.
+
+
+// ===== TESTING YOUR SOLUTIONS =====
+// Uncomment sections below as you solve them
+
+// Test Q1
+// const nums1 = [3, 5, 2, 8];
+// console.log("Q1 Sum:", yourSumFunction(nums1)); // Expected: 18
+
+// Test Q2
+// const nums2 = [1, 2, 3, 4, 5, 6];
+// console.log("Q2 Even count:", yourCountEvenFunction(nums2)); // Expected: 3
+
+// Test Q3
+// const nums3 = [2, 8, 3, 9, 1, 6];
+// console.log("Q3 Greater than 5:", yourFilterFunction(nums3)); // Expected: [8, 9, 6]
+
+// ... continue testing as you solve more
